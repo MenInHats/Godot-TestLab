@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://hbw7u27oa38l"]
+
+[ext_resource type="Script" uid="uid://ewn62y51lj6w" path="res://TestLab_Particles/Particle_Embers/particle_embers.gd" id="1_qirej"]
+
+[sub_resource type="Gradient" id="Gradient_6u750"]
+offsets = PackedFloat32Array(0, 0.166667, 0.38, 0.646667, 0.76)
+colors = PackedColorArray(1, 0.109804, 0, 1, 1, 0.580392, 0.168627, 1, 1, 0.85098, 0.133333, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[node name="embers" type="Node2D"]
+script = ExtResource("1_qirej")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(0, 65)
+amount = 200
+lifetime = 2.0
+emission_shape = 3
+emission_rect_extents = Vector2(140, 1)
+spread = 180.0
+gravity = Vector2(0, -50)
+initial_velocity_min = 10.0
+initial_velocity_max = 30.0
+scale_amount_min = 0.2
+color_ramp = SubResource("Gradient_6u750")

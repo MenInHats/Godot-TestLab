@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0l3udklqecf7"
-path="res://.godot/imported/PlaceHolderVGBackground.png-af1e02264cd5b31efff4abf7505555cd.ctex"
+path="res://.godot/imported/PlaceHolderVGBackground.png-c2f11ef2863c6d15ce9c6a4007ea3049.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PlaceHolderVGBackground.png"
-dest_files=["res://.godot/imported/PlaceHolderVGBackground.png-af1e02264cd5b31efff4abf7505555cd.ctex"]
+source_file="res://Assets/Placeholder/PlaceHolderVGBackground.png"
+dest_files=["res://.godot/imported/PlaceHolderVGBackground.png-c2f11ef2863c6d15ce9c6a4007ea3049.ctex"]
 
 [params]
 

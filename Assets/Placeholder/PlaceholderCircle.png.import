@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://y7m4fplcfsfa"
-path="res://.godot/imported/PlaceholderCircle.png-06424df725193b8c0cd4b58080524936.ctex"
+path="res://.godot/imported/PlaceholderCircle.png-272d7518c590063f8b6ea1ff77012d73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PlaceholderCircle.png"
-dest_files=["res://.godot/imported/PlaceholderCircle.png-06424df725193b8c0cd4b58080524936.ctex"]
+source_file="res://Assets/Placeholder/PlaceholderCircle.png"
+dest_files=["res://.godot/imported/PlaceholderCircle.png-272d7518c590063f8b6ea1ff77012d73.ctex"]
 
 [params]
 

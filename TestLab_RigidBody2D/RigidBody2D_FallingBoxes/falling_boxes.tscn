@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkby6444oluho"]
+
+[ext_resource type="Texture2D" uid="uid://c0l3udklqecf7" path="res://Assets/Placeholder/PlaceHolderVGBackground.png" id="1_kcw4b"]
+[ext_resource type="Texture2D" uid="uid://dedr3fa5f1f78" path="res://Assets/Placeholder/PlaceholderSquare.png" id="2_vcceg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb4av"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vg8i2"]
+size = Vector2(660, 63)
+
+[node name="FallingBoxes" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1161.0
+offset_bottom = 659.0
+texture = ExtResource("1_kcw4b")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(557, 260)
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+texture_filter = 1
+texture = ExtResource("2_vcceg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("RectangleShape2D_pb4av")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(341, 509)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(-106, 1)
+scale = Vector2(0.9375, 1)
+texture = ExtResource("2_vcceg")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 705.125, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(225, 32.5)
+shape = SubResource("RectangleShape2D_vg8i2")
+
+[node name="RigidBody2DBig" type="RigidBody2D" parent="."]
+position = Vector2(609, 56)
+mass = 10.0
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2DBig"]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_vcceg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2DBig"]
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_pb4av")

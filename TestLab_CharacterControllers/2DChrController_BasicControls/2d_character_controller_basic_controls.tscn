@@ -1,0 +1,85 @@
+[gd_scene load_steps=8 format=3 uid="uid://csexsl6mxo5yj"]
+
+[ext_resource type="Texture2D" uid="uid://c0l3udklqecf7" path="res://Assets/Placeholder/PlaceHolderVGBackground.png" id="1_48mm5"]
+[ext_resource type="Texture2D" uid="uid://dedr3fa5f1f78" path="res://Assets/Placeholder/PlaceholderSquare.png" id="2_cahbu"]
+[ext_resource type="Script" uid="uid://b8ipwsf5ney7m" path="res://TestLab_CharacterControllers/2DChrController_BasicControls/character_body_2d_script.gd" id="3_il2ls"]
+[ext_resource type="Texture2D" uid="uid://cb577ly4kax3e" path="res://Assets/Placeholder/godotLogo_image.png" id="4_2r5l4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rb01h"]
+size = Vector2(63, 696)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bdj4y"]
+size = Vector2(1217, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_djyi6"]
+size = Vector2(50, 48)
+
+[node name="2DCharacterController_BasicControls" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1161.0
+offset_bottom = 659.0
+texture = ExtResource("1_48mm5")
+
+[node name="StaticBody2DLeft" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2DLeft"]
+texture_filter = 1
+texture_repeat = 2
+texture = ExtResource("2_cahbu")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 700.25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DLeft"]
+position = Vector2(31.5, 349)
+shape = SubResource("RectangleShape2D_rb01h")
+
+[node name="StaticBody2DRight" type="StaticBody2D" parent="."]
+position = Vector2(1090, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2DRight"]
+texture_filter = 1
+texture_repeat = 2
+texture = ExtResource("2_cahbu")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 700.25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DRight"]
+position = Vector2(31.5, 349)
+shape = SubResource("RectangleShape2D_rb01h")
+
+[node name="StaticBody2DBottom" type="StaticBody2D" parent="."]
+position = Vector2(1, 583)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2DBottom"]
+texture_filter = 1
+texture_repeat = 2
+texture = ExtResource("2_cahbu")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1220.5, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DBottom"]
+position = Vector2(608.5, 32)
+shape = SubResource("RectangleShape2D_bdj4y")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(580, 530)
+script = ExtResource("3_il2ls")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("4_2r5l4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_djyi6")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 489.0
+offset_top = 223.0
+offset_right = 688.0
+offset_bottom = 249.0
+text = "Control With Arrow Keys"

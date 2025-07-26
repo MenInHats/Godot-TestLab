@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bawv65u62tvj1"]
+
+[ext_resource type="Texture2D" uid="uid://c0l3udklqecf7" path="res://Assets/Placeholder/PlaceHolderVGBackground.png" id="1_abh8w"]
+[ext_resource type="PackedScene" uid="uid://cmkc6x7na1paw" path="res://TestLab_SoundEffects/SoundEffect_StartGameButton/start_button.tscn" id="2_7m8sj"]
+
+[node name="StartGameButton" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1161.0
+offset_bottom = 659.0
+texture = ExtResource("1_abh8w")
+
+[node name="startButton" parent="." instance=ExtResource("2_7m8sj")]
+position = Vector2(573, 315)

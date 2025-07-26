@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmkc6x7na1paw"]
+
+[ext_resource type="AudioStream" uid="uid://dk8r46mloyo7e" path="res://Assets/Audio/Sound Effects/game-start.mp3" id="1_bj5lb"]
+[ext_resource type="Script" uid="uid://do7o7fhow6rw2" path="res://TestLab_SoundEffects/SoundEffect_StartGameButton/start_button.gd" id="1_lwl3b"]
+
+[sub_resource type="Gradient" id="Gradient_lwl3b"]
+colors = PackedColorArray(0, 0.662745, 0.882353, 1, 0.2, 0.384314, 0.611765, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_lwl3b"]
+gradient = SubResource("Gradient_lwl3b")
+width = 128
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_etpv8"]
+size = Vector2(128, 64)
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(566, 307)
+script = ExtResource("1_lwl3b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = SubResource("GradientTexture2D_lwl3b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_etpv8")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -61.0
+offset_top = -27.0
+offset_right = 60.0
+offset_bottom = 27.0
+text = "Start Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="sfx_gameStart" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_bj5lb")
+volume_db = 1.0

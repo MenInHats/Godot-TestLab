@@ -15,6 +15,31 @@ run/main_scene="uid://drfuxbygv15ci"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Assets/Audio/": "orange",
+"res://Assets/Leafs/": "orange",
+"res://Assets/Placeholder/": "orange",
+"res://Components/": "red",
+"res://TestLab_CharacterControllers/": "red",
+"res://TestLab_CharacterControllers/2DChrController_BasicControls/": "orange",
+"res://TestLab_Particles/": "red",
+"res://TestLab_Particles/ParticleExperiment/": "orange",
+"res://TestLab_Particles/ParticleExplosion/": "orange",
+"res://TestLab_Particles/Particle_Driping/": "orange",
+"res://TestLab_Particles/Particle_Embers/": "orange",
+"res://TestLab_Particles/Particle_Fire/": "orange",
+"res://TestLab_Particles/Particle_Rain/": "orange",
+"res://TestLab_Particles/Particle_Snow/": "orange",
+"res://TestLab_RigidBody2D/": "red",
+"res://TestLab_RigidBody2D/RigidBody2D_FallingBoxes/": "orange",
+"res://TestLab_RigidBody2D/RigidBody2D_LaunchPad/": "orange",
+"res://TestLab_SoundEffects/": "red",
+"res://TestLab_SoundEffects/SoundEffect_StartGameButton/": "orange"
+}
+
 [input]
 
 leftClick={

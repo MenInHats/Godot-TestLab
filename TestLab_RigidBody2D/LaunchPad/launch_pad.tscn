@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c0l3udklqecf7" path="res://Assets/Placeholder/PlaceHolderVGBackground.png" id="1_gviit"]
 [ext_resource type="Texture2D" uid="uid://dedr3fa5f1f78" path="res://Assets/Placeholder/PlaceholderSquare.png" id="2_j8aci"]
-[ext_resource type="Script" uid="uid://bl0mrw8il3nkk" path="res://TestLab_RigidBody2D/RigidBody2D_LaunchPad/lauchPad_script.gd" id="3_j8aci"]
+[ext_resource type="Script" uid="uid://bl0mrw8il3nkk" path="res://TestLab_RigidBody2D/LaunchPad/lauchPad_script.gd" id="3_j8aci"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0eail"]
 size = Vector2(660, 63)

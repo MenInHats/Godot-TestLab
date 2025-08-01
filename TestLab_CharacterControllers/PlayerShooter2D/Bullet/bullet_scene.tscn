@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxy78rkc7q3a4"]
+
+[ext_resource type="Script" uid="uid://trglx2aiws3m" path="res://TestLab_CharacterControllers/PlayerShooter2D/Bullet/bullet_script.gd" id="1_awc8e"]
+[ext_resource type="Texture2D" uid="uid://dedr3fa5f1f78" path="res://Assets/Placeholder/PlaceholderSquare.png" id="1_jayjp"]
+[ext_resource type="Script" uid="uid://kv036ujqpbs" path="res://Components/Scripts/projectile_motion_component_2d.gd" id="3_5lw36"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kjbnq"]
+size = Vector2(50, 8)
+
+[node name="BulletScene" type="Area2D"]
+script = ExtResource("1_awc8e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2.38419e-07, 0)
+scale = Vector2(0.78125, 0.125)
+texture = ExtResource("1_jayjp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_kjbnq")
+
+[node name="ProjectileMotionComponent2D" type="Node2D" parent="."]
+script = ExtResource("3_5lw36")

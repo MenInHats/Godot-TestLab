@@ -30,5 +30,5 @@ func resetEntityHealth():
 	curHealth = maxHealth
 	emit_signal("health_healed", curHealth)
 
-func isEntityDead() -> bool: #fuction to check if entity is dead
+func isEntityDead() -> bool: #fuction to check if entity (self) is dead
 	return curHealth <= 0

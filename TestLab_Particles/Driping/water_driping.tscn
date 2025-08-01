@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dtbdv2e8d6mlh"]
 
-[ext_resource type="Script" uid="uid://b7o7ck0yo7xgi" path="res://TestLab_Particles/Particle_Driping/water_driping.gd" id="1_qp0q2"]
+[ext_resource type="Script" uid="uid://b7o7ck0yo7xgi" path="res://TestLab_Particles/Driping/water_driping.gd" id="1_qp0q2"]
 
 [node name="waterDriping" type="Node2D"]
 script = ExtResource("1_qp0q2")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c0l3udklqecf7" path="res://Assets/Placeholder/PlaceHolderVGBackground.png" id="1_48mm5"]
 [ext_resource type="Texture2D" uid="uid://dedr3fa5f1f78" path="res://Assets/Placeholder/PlaceholderSquare.png" id="2_cahbu"]
-[ext_resource type="Script" uid="uid://b8ipwsf5ney7m" path="res://TestLab_CharacterControllers/2DChrController_BasicControls/character_body_2d_script.gd" id="3_il2ls"]
+[ext_resource type="Script" uid="uid://b8ipwsf5ney7m" path="res://TestLab_CharacterControllers/BasicControls2D/character_body_2d_script.gd" id="3_il2ls"]
 [ext_resource type="Texture2D" uid="uid://cb577ly4kax3e" path="res://Assets/Placeholder/godotLogo_image.png" id="4_2r5l4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rb01h"]

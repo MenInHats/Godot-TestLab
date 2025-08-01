@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://xc4xlx1swp4n"]
 
-[ext_resource type="Script" uid="uid://dnfexwgn6aw51" path="res://TestLab_Particles/ParticleExplosion/particle_explosion.gd" id="1_xus8g"]
+[ext_resource type="Script" uid="uid://dnfexwgn6aw51" path="res://TestLab_Particles/Explosion/particle_explosion.gd" id="1_xus8g"]
 
 [sub_resource type="Curve" id="Curve_6mjtw"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.258427), 0.0, 0.0, 0, 0]

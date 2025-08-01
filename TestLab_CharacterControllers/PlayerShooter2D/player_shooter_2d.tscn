@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvaptq7ihuent"]
+
+[ext_resource type="Script" uid="uid://dqtwstibokk7k" path="res://TestLab_CharacterControllers/PlayerShooter2D/player_shooter_2d_script.gd" id="1_cp48b"]
+[ext_resource type="Texture2D" uid="uid://c0l3udklqecf7" path="res://Assets/Placeholder/PlaceHolderVGBackground.png" id="1_oj0mb"]
+[ext_resource type="PackedScene" uid="uid://bxy78rkc7q3a4" path="res://TestLab_CharacterControllers/PlayerShooter2D/Bullet/bullet_scene.tscn" id="2_oj0mb"]
+[ext_resource type="Texture2D" uid="uid://cb577ly4kax3e" path="res://Assets/Placeholder/godotLogo_image.png" id="4_xb0to"]
+
+[node name="ChrController_PlayerShooter2D" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1161.0
+offset_bottom = 659.0
+texture = ExtResource("1_oj0mb")
+
+[node name="PlayerShooter2D" type="CharacterBody2D" parent="."]
+position = Vector2(575, 292)
+rotation = 4.71239
+script = ExtResource("1_cp48b")
+bullet_scene = ExtResource("2_oj0mb")
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerShooter2D"]
+texture_filter = 1
+rotation = 4.71239
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("4_xb0to")

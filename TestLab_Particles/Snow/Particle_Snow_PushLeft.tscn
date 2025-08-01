@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://evhvalkiaty6"]
 
-[ext_resource type="Script" uid="uid://g4yifvbxg1t6" path="res://TestLab_Particles/Particle_Snow/particle_snow_push_left.gd" id="1_w8g7x"]
+[ext_resource type="Script" uid="uid://g4yifvbxg1t6" path="res://TestLab_Particles/Snow/particle_snow_push_left.gd" id="1_w8g7x"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_w8g7x")

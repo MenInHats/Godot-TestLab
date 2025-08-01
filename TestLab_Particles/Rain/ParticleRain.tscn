@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsq2ihh5bx5tq"]
 
-[ext_resource type="Script" uid="uid://dknht5fqw6a1n" path="res://TestLab_Particles/Particle_Rain/particle_rain.gd" id="1_tcsyd"]
+[ext_resource type="Script" uid="uid://dknht5fqw6a1n" path="res://TestLab_Particles/Rain/particle_rain.gd" id="1_tcsyd"]
 
 [sub_resource type="Gradient" id="Gradient_wtdo8"]
 colors = PackedColorArray(0, 0.407843, 1, 1, 0.0313726, 0.686275, 1, 1)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cmkc6x7na1paw"]
 
 [ext_resource type="AudioStream" uid="uid://dk8r46mloyo7e" path="res://Assets/Audio/Sound Effects/game-start.mp3" id="1_bj5lb"]
-[ext_resource type="Script" uid="uid://do7o7fhow6rw2" path="res://TestLab_SoundEffects/SoundEffect_StartGameButton/start_button.gd" id="1_lwl3b"]
+[ext_resource type="Script" uid="uid://do7o7fhow6rw2" path="res://TestLab_SoundEffects/StartGameButton/start_button.gd" id="1_lwl3b"]
 
 [sub_resource type="Gradient" id="Gradient_lwl3b"]
 colors = PackedColorArray(0, 0.662745, 0.882353, 1, 0.2, 0.384314, 0.611765, 1)

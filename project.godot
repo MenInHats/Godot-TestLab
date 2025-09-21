@@ -12,8 +12,16 @@ config_version=5
 
 config/name="TestLab"
 run/main_scene="uid://drfuxbygv15ci"
-config/features=PackedStringArray("4.4", "Mobile")
+config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
 
 [file_customization]
 
@@ -24,7 +32,8 @@ folder_colors={
 "res://Assets/Placeholder/": "orange",
 "res://Components/": "red",
 "res://TestLab_CharacterControllers/": "red",
-"res://TestLab_CharacterControllers/BasicControls2D/": "orange",
+"res://TestLab_CharacterControllers/2DFlatController/": "orange",
+"res://TestLab_CharacterControllers/2DPlatformer/": "orange",
 "res://TestLab_CharacterControllers/PlayerShooter2D/": "orange",
 "res://TestLab_CharacterControllers/PlayerShooter2D/Bullet/": "yellow",
 "res://TestLab_Particles/": "red",
@@ -35,7 +44,9 @@ folder_colors={
 "res://TestLab_Particles/ParticleExperiment/": "orange",
 "res://TestLab_Particles/Rain/": "orange",
 "res://TestLab_Particles/Snow/": "orange",
+"res://TestLab_Pathfinding/": "red",
 "res://TestLab_RigidBody2D/": "red",
+"res://TestLab_RigidBody2D/CharacterAndRigidBody2DInteractions/": "orange",
 "res://TestLab_RigidBody2D/FallingBoxes/": "orange",
 "res://TestLab_RigidBody2D/LaunchPad/": "orange",
 "res://TestLab_SoundEffects/": "red",
@@ -69,7 +80,35 @@ shoot={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
+Flat2D_Left={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194319,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+Flat2D_Right={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194321,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+Flat2D_Up={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194320,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+Flat2D_Down={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194322,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+
+[physics]
+
+jolt_physics_3d/stretch/mode="canvas_items"
+jolt_physics_3d/size/window_height_override=1080
+jolt_physics_3d/size/window_width_override=1920
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+2d/snap/snap_2d_transforms_to_pixel=true

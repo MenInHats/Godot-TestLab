@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://1ss71iqgegv8"]
+
+[ext_resource type="Script" uid="uid://b0tj4qiberllv" path="res://TestLab_Pathfinding/EnemyCharacterFollowPlayer/enemy_script.gd" id="1_hcol6"]
+[ext_resource type="Texture2D" uid="uid://cb577ly4kax3e" path="res://Assets/Placeholder/godotLogo_image.png" id="2_mqaln"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mf6f1"]
+radius = 22.505554
+
+[node name="enemy" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_hcol6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.09803922, 0, 1)
+texture_filter = 1
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_mqaln")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mf6f1")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

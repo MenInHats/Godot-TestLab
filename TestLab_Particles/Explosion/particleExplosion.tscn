@@ -14,6 +14,7 @@ colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
 script = ExtResource("1_xus8g")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(321, 179)
 emitting = false
 amount = 80
 lifetime = 0.5
@@ -30,4 +31,4 @@ scale_amount_curve = SubResource("Curve_6mjtw")
 color_ramp = SubResource("Gradient_hcsuj")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(5, 5)
+position = Vector2(320, 179)

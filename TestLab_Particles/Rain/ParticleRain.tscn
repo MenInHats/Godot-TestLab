@@ -3,25 +3,25 @@
 [ext_resource type="Script" uid="uid://dknht5fqw6a1n" path="res://TestLab_Particles/Rain/particle_rain.gd" id="1_tcsyd"]
 
 [sub_resource type="Gradient" id="Gradient_wtdo8"]
-colors = PackedColorArray(0, 0.407843, 1, 1, 0.0313726, 0.686275, 1, 1)
+colors = PackedColorArray(0, 0.39607844, 1, 1, 0.03137255, 0.6627451, 1, 1)
 
 [node name="rain" type="Node2D"]
 script = ExtResource("1_tcsyd")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(5, 5)
+position = Vector2(320, 181)
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2(12, -72)
+position = Vector2(356, -3)
 amount = 600
-lifetime = 0.6
+lifetime = 1.3
 emission_shape = 3
-emission_rect_extents = Vector2(130, 1)
+emission_rect_extents = Vector2(360, 1)
 direction = Vector2(1, 90)
 spread = 10.0
 gravity = Vector2(-150, 300)
 initial_velocity_min = 100.0
 initial_velocity_max = 200.0
-scale_amount_min = 0.2
-scale_amount_max = 0.8
+scale_amount_min = 0.8
+scale_amount_max = 1.4
 color_ramp = SubResource("Gradient_wtdo8")

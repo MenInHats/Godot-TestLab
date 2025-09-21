@@ -6,17 +6,17 @@
 script = ExtResource("1_w8g7x")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(5, 5)
+position = Vector2(320, 181)
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2(118, -31)
+position = Vector2(645, 150)
 amount = 100
-lifetime = 3.0
+lifetime = 5.0
 emission_shape = 3
-emission_rect_extents = Vector2(1, 100)
+emission_rect_extents = Vector2(1, 200)
 direction = Vector2(-90, 20)
 spread = 20.0
 gravity = Vector2(0, 5)
-initial_velocity_min = 70.0
-initial_velocity_max = 90.0
-scale_amount_min = 0.2
+initial_velocity_min = 100.0
+initial_velocity_max = 180.0
+scale_amount_max = 2.0

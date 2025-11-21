@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://mkgwhaxld284"]
+
+[ext_resource type="Script" uid="uid://b76c3kga1rfl6" path="res://Components/Scripts/mouse_click_button_component_script.gd" id="1_uq1pd"]
+[ext_resource type="AudioStream" uid="uid://dk8r46mloyo7e" path="res://Assets/Audio/Sound Effects/game-start.mp3" id="2_riq1x"]
+
+[node name="MouseClickButtonComponent" type="Node2D" node_paths=PackedStringArray("sfx_button_press", "particle_button_press")]
+script = ExtResource("1_uq1pd")
+sfx_button_press = NodePath("testAudio2dStreamnode")
+particle_button_press = NodePath("testGPUParticles2D")
+
+[node name="testAudio2dStreamnode" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_riq1x")
+
+[node name="testGPUParticles2D" type="GPUParticles2D" parent="."]
+emitting = false

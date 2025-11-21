@@ -23,6 +23,7 @@ texture = ExtResource("2_mqaln")
 shape = SubResource("CircleShape2D_mf6f1")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+simplify_path = true
 debug_enabled = true
 
 [node name="Timer" type="Timer" parent="."]

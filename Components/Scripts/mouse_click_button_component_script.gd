@@ -7,4 +7,3 @@ func _input_event(viewport: Viewport, event: 	InputEvent, shape_idx: int):
 	if event is InputEventMouseButton and event.pressed:
 		print("Sound Played!")
 		sfx_button_press.play() 
-		particle_button_press.emitting = true

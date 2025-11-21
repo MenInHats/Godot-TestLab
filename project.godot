@@ -49,6 +49,9 @@ folder_colors={
 "res://TestLab_RigidBody2D/CharacterAndRigidBody2DInteractions/": "orange",
 "res://TestLab_RigidBody2D/FallingBoxes/": "orange",
 "res://TestLab_RigidBody2D/LaunchPad/": "orange",
+"res://TestLab_Shaders/": "red",
+"res://TestLab_Shaders/Lab1_Basics_In_Shaders/": "orange",
+"res://TestLab_Shaders/Lab2_WaveEffect/": "orange",
 "res://TestLab_SoundEffects/": "red",
 "res://TestLab_SoundEffects/StartGameButton/": "orange"
 }

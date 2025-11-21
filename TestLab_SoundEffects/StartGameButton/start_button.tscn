@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cmkc6x7na1paw"]
+[gd_scene load_steps=7 format=3 uid="uid://cmkc6x7na1paw"]
 
 [ext_resource type="AudioStream" uid="uid://dk8r46mloyo7e" path="res://Assets/Audio/Sound Effects/game-start.mp3" id="1_bj5lb"]
 [ext_resource type="Script" uid="uid://do7o7fhow6rw2" path="res://TestLab_SoundEffects/StartGameButton/start_button.gd" id="1_lwl3b"]
@@ -13,16 +13,25 @@ width = 128
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_etpv8"]
 size = Vector2(128, 64)
 
-[node name="Area2D" type="Area2D"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vpvih"]
+particle_flag_disable_z = true
+initial_velocity_max = 100.0
+angular_velocity_min = -1.6093254e-05
+angular_velocity_max = 9.999984
+gravity = Vector3(0, 0, 0)
+scale_max = 3.0
+
+[node name="Area2D" type="Area2D" node_paths=PackedStringArray("sfx_button_press", "particle_button_press")]
 position = Vector2(566, 307)
 script = ExtResource("1_lwl3b")
+sfx_button_press = NodePath("sfx_gameStart")
+particle_button_press = NodePath("GPUParticles2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 texture = SubResource("GradientTexture2D_lwl3b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource("RectangleShape2D_etpv8")
 
 [node name="Label" type="Label" parent="."]
@@ -38,3 +47,11 @@ metadata/_edit_use_anchors_ = true
 [node name="sfx_gameStart" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1_bj5lb")
 volume_db = 1.0
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 50
+one_shot = true
+explosiveness = 1.0
+randomness = 0.45
+process_material = SubResource("ParticleProcessMaterial_vpvih")

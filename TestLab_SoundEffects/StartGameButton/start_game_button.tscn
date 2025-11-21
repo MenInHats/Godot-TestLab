@@ -11,4 +11,4 @@ offset_bottom = 659.0
 texture = ExtResource("1_abh8w")
 
 [node name="startButton" parent="." instance=ExtResource("2_7m8sj")]
-position = Vector2(573, 315)
+position = Vector2(304, 167)

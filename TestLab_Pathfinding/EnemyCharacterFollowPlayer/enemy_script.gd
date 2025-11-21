@@ -16,4 +16,4 @@ func makepath() -> void:
 	nav_agent.target_position = player.global_position  # Set path target to player's position
 
 func _on_timer_timeout():
-	makepath()  # Update path when timer triggers
+	makepath()  # Update path when timer triggers 

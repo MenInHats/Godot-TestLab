@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkby6444oluho"]
+[gd_scene format=3 uid="uid://dkby6444oluho"]
 
 [ext_resource type="Texture2D" uid="uid://c0l3udklqecf7" path="res://Assets/Placeholder/PlaceHolderVGBackground.png" id="1_kcw4b"]
+[ext_resource type="Script" uid="uid://b1idfegeylbc0" path="res://TestLab_RigidBody2D/FallingBoxes/falling_boxes_scene_script.gd" id="1_qt0dy"]
 [ext_resource type="Texture2D" uid="uid://dedr3fa5f1f78" path="res://Assets/Placeholder/PlaceholderSquare.png" id="2_vcceg"]
+[ext_resource type="Script" uid="uid://ddplcfbec7ljn" path="res://TestLab_RigidBody2D/FallingBoxes/KillBox.gd" id="3_1yajl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pb4av"]
 size = Vector2(64, 64)
@@ -9,27 +11,31 @@ size = Vector2(64, 64)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vg8i2"]
 size = Vector2(660, 63)
 
-[node name="FallingBoxes" type="Node"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1fef"]
+size = Vector2(1626, 80)
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="FallingBoxes" type="Node" unique_id=209901524]
+script = ExtResource("1_qt0dy")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1555580135]
 offset_right = 1161.0
 offset_bottom = 659.0
 texture = ExtResource("1_kcw4b")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2(557, 260)
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=724573175]
+position = Vector2(559, 260)
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1609284655]
 texture_filter = 1
 texture = ExtResource("2_vcceg")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=202697503]
 shape = SubResource("RectangleShape2D_pb4av")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1676953899]
 position = Vector2(341, 509)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1240713684]
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(-106, 1)
@@ -39,19 +45,28 @@ centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 705.125, 64)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1470078732]
 position = Vector2(225, 32.5)
 shape = SubResource("RectangleShape2D_vg8i2")
 
-[node name="RigidBody2DBig" type="RigidBody2D" parent="."]
+[node name="RigidBody2DBig" type="RigidBody2D" parent="." unique_id=1715084252]
 position = Vector2(609, 56)
 mass = 10.0
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2DBig"]
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2DBig" unique_id=1574953276]
 texture_filter = 1
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_vcceg")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2DBig"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2DBig" unique_id=325712714]
 scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_pb4av")
+
+[node name="Killbox" type="Area2D" parent="." unique_id=2123684426]
+script = ExtResource("3_1yajl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killbox" unique_id=1761536478]
+position = Vector2(593, 709)
+shape = SubResource("RectangleShape2D_s1fef")
+
+[connection signal="body_entered" from="Killbox" to="Killbox" method="_on_body_entered"]

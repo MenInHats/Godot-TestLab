@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dal7l5p13ybqc"]
+
+[ext_resource type="Texture2D" uid="uid://dedr3fa5f1f78" path="res://Assets/Placeholder/PlaceholderSquare.png" id="1_b3ebd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1fef"]
+size = Vector2(64, 64)
+
+[node name="FallingBox" type="RigidBody2D" unique_id=724969816]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=915899553]
+texture = ExtResource("1_b3ebd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1378007715]
+shape = SubResource("RectangleShape2D_s1fef")

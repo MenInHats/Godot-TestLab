@@ -1,11 +1,15 @@
 extends Node
 
+var BoxScene = preload("res://TestLab_RigidBody2D/FallingBoxes/FallingBox.tscn")
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _input(event):
+	if event.is_action_pressed("leftClick"):
+		var instance = BoxScene.instantiate()
+		instance.set_global_position(get_viewport().get_mouse_position())
+		add_child(instance)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	
 	pass

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dqw5d6vo3ka3n"]
+
+[ext_resource type="Texture2D" uid="uid://c0l3udklqecf7" path="res://Assets/Placeholder/PlaceHolderVGBackground.png" id="1_cjifd"]
+[ext_resource type="Script" uid="uid://b02to6xvmu4l6" path="res://TestLab_UIElements/TestLab_Inventory/inv_ui_slot.gd" id="1_gm11v"]
+
+[node name="inv_UI_slot" type="Panel" unique_id=217107764]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(80, 80)
+offset_right = 80.0
+offset_bottom = 80.0
+script = ExtResource("1_gm11v")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1871710405]
+position = Vector2(3, 2)
+scale = Vector2(0.115625, 0.20833334)
+texture = ExtResource("1_cjifd")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=287116821]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="CenterContainer" unique_id=403018516]
+layout_mode = 2
+
+[node name="item_display" type="Sprite2D" parent="CenterContainer/Panel" unique_id=1292959405]

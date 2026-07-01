@@ -55,7 +55,9 @@ folder_colors={
 "res://TestLab_Shaders/Lab1_Basics_In_Shaders/": "orange",
 "res://TestLab_Shaders/Lab2_WaveEffect/": "orange",
 "res://TestLab_SoundEffects/": "red",
-"res://TestLab_SoundEffects/StartGameButton/": "orange"
+"res://TestLab_SoundEffects/StartGameButton/": "orange",
+"res://TestLab_UIElements/": "red",
+"res://TestLab_UIElements/DragAndDrop/": "orange"
 }
 
 [input]

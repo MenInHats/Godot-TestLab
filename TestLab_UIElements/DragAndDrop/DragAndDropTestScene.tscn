@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://fuq40rviaa38"]
+
+[ext_resource type="PackedScene" uid="uid://cvf77hii5bnii" path="res://TestLab_UIElements/DragAndDrop/DragAndDrop.tscn" id="1_ov141"]
+[ext_resource type="Texture2D" uid="uid://cb577ly4kax3e" path="res://Assets/Placeholder/godotLogo_image.png" id="2_uassl"]
+
+[node name="DragAndDropTestScene" type="Node" unique_id=508427682]
+
+[node name="DragAndDrop" parent="." unique_id=1629232433 instance=ExtResource("1_ov141")]
+offset_left = 92.0
+offset_top = 85.0
+offset_right = 142.0
+offset_bottom = 135.0
+
+[node name="DragAndDrop2" parent="." unique_id=1572108743 instance=ExtResource("1_ov141")]
+offset_left = 220.0
+offset_top = 84.0
+offset_right = 270.0
+offset_bottom = 134.0
+texture = ExtResource("2_uassl")

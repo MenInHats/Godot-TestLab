@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cvf77hii5bnii"]
+
+[ext_resource type="Script" uid="uid://cxqb621jupe03" path="res://TestLab_UIElements/DragAndDrop/DragAndDropScript.gd" id="1_qsupa"]
+
+[node name="DragAndDrop" type="TextureRect" unique_id=1629232433]
+custom_minimum_size = Vector2(50, 50)
+custom_maximum_size = Vector2(50, 50)
+offset_right = 50.0
+offset_bottom = 50.0
+expand_mode = 1
+script = ExtResource("1_qsupa")
+
+[node name="Panel" type="Panel" parent="." unique_id=1148022804]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 51.0
+offset_bottom = 51.0
+mouse_filter = 2

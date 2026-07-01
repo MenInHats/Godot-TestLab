@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inv" format=3 uid="uid://ht4v1fy3d1qv"]
+
+[ext_resource type="Script" uid="uid://c1vgo5iw78uy4" path="res://TestLab_UIElements/TestLab_Inventory/inventory_item.gd" id="1_fu6kd"]
+[ext_resource type="Resource" uid="uid://h5udmmqxyv1p" path="res://TestLab_UIElements/TestLab_Inventory/Items/PhCircleItem.tres" id="2_jfbrf"]
+[ext_resource type="Script" uid="uid://c8dmlbhvvpijs" path="res://TestLab_UIElements/TestLab_Inventory/inventory.gd" id="3_ccyom"]
+
+[resource]
+script = ExtResource("3_ccyom")
+items = Array[ExtResource("1_fu6kd")]([ExtResource("2_jfbrf"), ExtResource("2_jfbrf"), ExtResource("2_jfbrf"), null, null, null, null, null, ExtResource("2_jfbrf"), null, null, null])
+metadata/_custom_type_script = "uid://c8dmlbhvvpijs"

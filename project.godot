@@ -57,7 +57,9 @@ folder_colors={
 "res://TestLab_SoundEffects/": "red",
 "res://TestLab_SoundEffects/StartGameButton/": "orange",
 "res://TestLab_UIElements/": "red",
-"res://TestLab_UIElements/DragAndDrop/": "orange"
+"res://TestLab_UIElements/DragAndDrop/": "orange",
+"res://TestLab_UIElements/TestLab_Inventory/": "orange",
+"res://TestLab_UIElements/TestLab_Inventory/Items/": "yellow"
 }
 
 [input]
